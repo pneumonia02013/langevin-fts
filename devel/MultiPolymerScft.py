@@ -54,7 +54,7 @@ sb     = simulation.create_simulation_box(nx, lx)
 bond_len_a_sqr_n = epsilon*epsilon/(f*epsilon*epsilon + (1.0-f))
 bond_len_b_sqr_n = 1.0/(f*epsilon*epsilon + (1.0-f))
 N_pc = [int(f*n_segment),int((1-f)*n_segment)]
-pc = simulation.create_polymer_chain(N_pc, [bond_len_a_sqr_n,bond_len_a_sqr_n])
+pc = simulation.create_polymer_chain(N_pc, [bond_len_a_sqr_n,bond_len_b_sqr_n])
 
 ###### Example 01 ######
 ## this code adds homopolymer A with length N_A = 45
